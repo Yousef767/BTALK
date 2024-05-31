@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Tajawal", sans-serif;
+}
+
+.hideScroll::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+.h5 {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.h6 {
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.b1 {
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.38px;
+}
+.rl {
+  direction: rtl;
+}
+.lr {
+  direction: ltr;
+}
+.text-Gray {
+  color: #121212;
+}
+
+.login1bg {
+  background: url("https://res.cloudinary.com/freelancer3223/image/upload/v1710686795/thebtalk_images/7a18e779d4e9d91553759a443127e422_zkq1gx.jpg")
+    lightgray -29.92px -1.781px / 116.697% 123.339% no-repeat;
+}
+.bg_flower {
+  border-radius: 48px 48px 0px 0px;
+  background-image: url("https://res.cloudinary.com/freelancer3223/image/upload/v1711122133/thebtalk_images/Frame_92_bgg6yd.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  box-shadow: 0px -8px 24px 0px rgba(0, 0, 0, 0.1);
+}
+/* .bg-flower {
+  border-radius: 48px 48px 0px 0px;
+  background-color: #fff; */
+/* background-image: url("https://res.cloudinary.com/freelancer3223/image/upload/v1710722551/thebtalk_images/e054fd037aa2d9d3ef78a4a383494a72_abje0i.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+/* background: url("https://res.cloudinary.com/freelancer3223/image/upload/v1710722551/thebtalk_images/e054fd037aa2d9d3ef78a4a383494a72_abje0i.png")
+    lightgray 50% / cover no-repeat;
+  box-shadow: 0px -8px 24px 0px rgba(0, 0, 0, 0.1); */
+/* } */
+
+.behindShape::after {
+  content: "";
+  position: absolute;
+  width: 84%;
+  left: 8%;
+  top: -25px;
+  height: 105px;
+  border-radius: 40px 40px 0px 0px;
+  opacity: 0.6;
+  background: #fff;
+  z-index: 0;
+}
+
+/* welcome back input's label style  */
+.form-input.valid input {
+  background: white;
+}
+.form-input.valid input ~ label,
+.form-input input:focus ~ label {
+  background: #fff;
+  top: 2px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #afafaf;
+}
+
+.form-input.error input {
+  border-color: #f46c6c;
+}
+
+.empty-otp::after {
+  content: "";
+  width: 11px;
+  height: 1.5px;
+  background: #414141;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  bottom: 3px;
+}
+
+.navlink.active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 48px;
+  background: #ea9967;
+  border-radius: 0px 0px 8px 8px;
+  transition: all 0.3s ease-in-out;
+}
+
+.invitation_bg {
+  background: url("https://res.cloudinary.com/freelancer3223/image/upload/v1711290851/thebtalk_images/Group_4_1_ohqyln.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.linearbg {
+  background: linear-gradient(
+    168deg,
+    #ebc1a7 0%,
+    #ead9c6 51.56%,
+    #ebc1a7 100%,
+    #ebc1a7 100%
+  );
+}
+
+.notifications-container :last-child {
+  border: none;
+}
+
+/* swiper pagination style  */
+.swiper-pagination {
+  bottom: -4px !important;
+  transform: translateY(5px) !important;
+}
+.swiper-pagination-bullet {
+  width: 8px !important;
+  height: 8px !important;
+  background: #e3b989 !important;
+  transition: all 0.3s ease-in-out !important;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 10px !important;
+  height: 10px !important;
+  background: #ea9967 !important;
+}
+.homeSwiper .swiper-wrapper {
+  align-items: center;
+}
+
+.homeSwiper .swiper-wrapper .swiper-slide {
+  height: 352px !important;
+  width: auto !important;
+  transition: all 0.8s ease-in-out;
+}
+
+.homeSwiper .swiper-wrapper .swiper-slide.swiper-slide-active {
+  height: 400px !important;
+  width: auto !important;
+}
+.homeSliderBg {
+  background: url("https://res.cloudinary.com/freelancer3223/image/upload/v1711815582/thebtalk_images/img_splnrc.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+}
+/* animations  */
+.rotateAnimation {
+  animation-name: rotation;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: reverse;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
