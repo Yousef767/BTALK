@@ -1,3 +1,4 @@
+'use client';
 import Container from "@/components/pages/account/chat/Container";
 import Header from "@/components/ui/Header";
 import React from "react";

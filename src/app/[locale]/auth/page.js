@@ -1,3 +1,4 @@
+'use client';
 let isAuthenticated = sessionStorage.getItem('token') !== null ? true : false;
 
 export function setIsAuthenticated(value) {
