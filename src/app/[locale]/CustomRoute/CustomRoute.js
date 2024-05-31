@@ -9,7 +9,7 @@ const CustomRoute = ({ children }) => {
   useEffect(() => {
     // Redirect to login if not authenticated
     if (!isAuthenticated) {
-      router.push(`/adminLogin`);
+      router.push(`adminLogin`);
     }
   }, [isAuthenticated]);
 
