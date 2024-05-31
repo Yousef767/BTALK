@@ -13,7 +13,9 @@ const CustomRoute = ({ children }) => {
     }
   }, [isAuthenticated]);
 
-
+  if (!isAuthenticated) {
+    return null;
+  }
   return children;
 };
 
