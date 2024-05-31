@@ -4,7 +4,7 @@ import React, { useState } from "react";
 
 import { setIsAuthenticated } from "../auth/page.js";
 import { useRouter } from "next/navigation";
-export default function Login() {
+ function AdminLogin() {
   const t_name = "admin";
   const t_password = "password";
   const [username, setUsername] = useState("");
@@ -48,3 +48,4 @@ export default function Login() {
     </main>
   );
 }
+export default AdminLogin
